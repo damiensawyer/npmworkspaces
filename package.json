@@ -1,17 +1,12 @@
 {
-  "name": "npmworkspacs",
+  "name": "my-workspace",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
-  "private":true
-
+  "type": "module",
+  "scripts": {
+    "start": "node packages/package-a/index.js"
+  }
 }
